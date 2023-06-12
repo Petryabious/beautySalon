@@ -1,0 +1,35 @@
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+@import "./base/mixins";
+
+// Blocks
+
+@import "./blocks/logo";
+@import "./blocks/nav";
+@import "./blocks/btn";
+@import "./blocks/decor-border";
+@import "./blocks/social";
+@import "./blocks/title";
+@import "./blocks/nav-mobile";
+@import "./blocks/nav-icon";
+@import "./blocks/slider";
+@import "./blocks/modal-signup";
+@import "./blocks/modal-video";
+@import "./blocks/form";
+
+
+
+
+// sections
+
+@import "./sections/header";
+@import "./sections/page-top";
+@import "./sections/working-time";
+@import "./sections/prices";
+@import "./sections/portfolio";
+@import "./sections/portfolio";
+@import "./sections/rules";
+@import "./sections/contacts";
+@import "./sections/footer";

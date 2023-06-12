@@ -1,0 +1,43 @@
+
+@media (max-width: 767px) {
+
+    .slider{
+        height: 432px;
+
+        @media (max-width: 380px) {
+            height: 350px;
+        }
+    }   
+    .slider__item{
+        
+        display: none;
+
+    
+        &_active{
+            display: block;
+        }
+    }
+
+
+    .slider__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 21px;
+    }
+    .slider-dot {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: rgba(168, 175, 156, 0.3);
+        cursor: pointer;
+        
+        &_active{
+            background: #A8AF9C;
+        }
+    }
+    
+
+}
+
+

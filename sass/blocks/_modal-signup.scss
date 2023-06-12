@@ -1,0 +1,90 @@
+.modal-signup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all .8s ease-in;
+    visibility: visible;
+    opacity: 1;
+    
+
+    &_hidden{
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+
+
+        .modal-signup__content{
+            opacity: 0;
+            transform: translate(0 ,-100%);
+        }
+        
+    }
+}
+.modal-signup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+.modal-signup__content {
+    padding: 50px 70px;
+    max-width: 600px;
+    width: 100%;
+    background: $white-color;
+    position: relative;
+
+    transition: all .6s ease-in;
+    opacity: 1;
+    transform: translate(0 ,0);
+
+    @media (min-width: 1800px) {
+        max-width: 800px;
+    }
+
+    @media (max-width: 630px) {
+        padding: 30px 45px;
+    }
+
+    @media (max-width: 470px) {
+        padding: 45px 20px 25px 20px;
+    }
+
+}
+.modal-signup__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+
+    @media (max-width: 470px) {
+        top: 20px;
+        right: 20px;
+    }
+}
+.modal-signup__title {
+    margin-bottom: 70px;
+    font-size: 30px;
+    font-family: $second-font;
+
+    @media (min-width: 1800px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 630px) {
+        margin-bottom: 35px;
+    }
+
+    @media (max-width: 470px) {
+        font-size: 26px;
+    }
+    
+
+}
+.modal-signup__form {
+}
+

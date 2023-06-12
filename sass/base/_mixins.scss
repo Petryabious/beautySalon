@@ -1,0 +1,19 @@
+@mixin headerLine($widthPercenges){
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 0;
+    background: linear-gradient(120.06deg, #DAA977 -408.35%, #E3B373 -319.28%, #FEE0B7 -224.64%, #FEE5C5 -130.01%, #DEA760 14.96%, #C3843E 148.34%);
+    width: $widthPercenges;
+    height: 3px;
+}
+
+
+@mixin line {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: $gold2-color;
+}

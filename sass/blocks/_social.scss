@@ -1,0 +1,24 @@
+.social {
+}
+.social-link {
+
+    svg path{
+        transition: all .3s ease;
+    }
+
+    &:hover{
+
+        .social-link-vk path{
+            fill: #0077FF;
+        }
+        .social-link-insta path{
+            fill: #D64763;
+        }
+    }
+}
+
+.social-link-vk{
+    
+}
+
+.social-link-insta{}

@@ -1,0 +1,95 @@
+.page-top {
+    position: fixed;
+    padding: 40px 40px 15px 0;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    display: none;
+
+    
+    @media (max-width: 950px) {
+        display: block;
+    }
+}
+.page-top__container {
+}
+.page-top__delay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 5;
+
+    transition: .3s ease-in;
+
+    // display: none;
+    transform: translateX(100%);
+
+    &_active{
+        // display: block;
+        transform: translateX(0);
+    }
+
+}
+.page-top__wrapper {
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: $green-color;
+    z-index: 5;
+
+    max-width: 430px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    transition: .5s ease;
+
+    transform: translateX(100%);
+
+    &_active{
+        transform: translateX(0);
+    }
+}
+.page-top__logo {
+    margin-bottom: 125px;
+}
+.page-top__nav {
+    margin-bottom: 135px;
+}
+
+.page-top__social {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+
+.page-top__burger{
+    // position: fixed;
+    // top: 40px;
+    // right: 44px;
+    // z-index: 20;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.social {
+}
+.social-link {
+}
+.social-link-vk {
+}
+.social-link-insta {
+}

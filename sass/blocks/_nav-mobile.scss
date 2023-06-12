@@ -1,0 +1,17 @@
+.nav-mobile {
+}
+.nav-mobile__list {
+
+    li{
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.28;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $white-color;
+
+        &:not(:last-child){
+            margin-bottom: 32px;
+        }
+    }
+}

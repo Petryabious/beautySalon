@@ -1,0 +1,52 @@
+.btn {
+    font-size: 24px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    color: $white-color;
+    background: $green-color;
+
+    padding: 0 60px;
+    border-radius: 40px;
+    cursor: pointer;
+
+    transition: all .2s ease-in;
+
+    &:hover{
+        background: $btn-hover-green;
+    }
+
+    &_big{
+        padding: 0 50px;
+        background:  linear-gradient(147.79deg, #DAA977 -91.33%, #E3B373 -57.94%, #FEE0B7 -22.47%, #FEE5C5 6.74%, #DEA760 42.21%, #C3843E 79.77%, #AF6B1F 117.32%);
+        transition: .3s linear-gradient;
+
+        @media (max-width: 600px) {
+            letter-spacing: 0.07em;
+        }
+        @media (max-width: 400px) {
+            letter-spacing: 0;
+        }
+
+        &:hover{
+            background: $btn-hover-orange;
+        }
+    }
+
+
+    
+    @media (max-width: 600px) {
+        font-size: 20px;
+        line-height: 50px;
+        padding: 0 20px;
+    }
+    @media (max-width: 400px) {
+
+        font-size: 16px;
+        
+    }
+}
+

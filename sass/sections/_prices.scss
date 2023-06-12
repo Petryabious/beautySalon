@@ -1,0 +1,242 @@
+.prices {
+    padding: 189px 0 177px;
+
+    
+    @media (max-width: 1150px) {
+        padding-bottom: 110px;
+    }
+    @media (max-width: 850px) {
+        padding-top: 100px;
+    }
+    @media (max-width: 450px) {
+        padding: 75px 0;
+    }
+}
+
+.prices__tab-nav {
+    margin-bottom: 75px;
+    display: flex;
+    column-gap: 106px;
+
+    .prices__tab-title{
+        display: block;
+    }
+
+    @media (max-width: 1300px) {
+        gap: 55px;
+    }
+    @media (max-width: 1000px) {
+        gap: 45px;
+    }
+    @media (max-width: 850px) {
+        display: none;;
+    }
+    @media (max-width: 850px) {
+        display: none;;
+    }
+
+}
+.prices__tab-title {
+    font-size: 48px;
+    line-height: 1.29;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+
+    cursor: pointer;
+    transition: all .3s ease-in;
+
+    display: none;
+
+    span{
+        display: block;
+        height: 1px;
+        width: 100%;
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        background: $gold2-color;
+    }
+
+    
+    @media (max-width: 1300px) {
+        font-size: 40px;
+    }
+    @media (max-width: 1300px) {
+        font-size: 40px;
+    }
+    @media (max-width: 950px) {
+        font-size: 35px;
+    }
+
+
+    @media (max-width: 850px) {
+        display: block;
+        padding: 8px 0 11px;
+
+        &::after, &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            
+            width: 15px;
+            height: 1px;
+            background: $black-color;
+            transition: all .3s ease-in;
+        }
+    
+        &::before{
+            transform: translateY(-50%) rotate(-45deg);
+            right: 35px;
+    
+        }
+        &::after{
+            transform: translateY(-50%) rotate(45deg);
+            right: 45px;
+
+        }
+    }
+
+    @media (max-width: 430px) {
+        font-size: 24px;
+
+    }
+
+    &_active{
+        font-family: $second-font;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+
+        @media (max-width: 850px) {
+
+            margin-bottom: 40px;
+
+            font-family: $main-font;
+            letter-spacing: 0.1em;
+
+
+            &::before{
+                transform: translateY(-50%) rotate(45deg);
+                right: 35px;
+
+            }
+            &::after{
+                transform: translateY(-50%) rotate(-45deg);
+                right: 45px;
+    
+
+            }
+        }
+
+        @media (max-width: 390px) {
+            margin-bottom: 20px;
+    
+        }
+
+        span{
+            display: none;
+        }
+    }
+
+    &:hover{
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+
+
+}
+.prices__tab-body {
+    display: none;
+
+    &_active {
+        display: block;
+    }
+
+    
+}
+.prices__tab-item {
+
+    padding-right: 130px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    font-size: 24px;
+    line-height: 2.67;
+
+    position: relative;
+
+    &:not(:last-child){
+        &::after{
+            @include line;
+            left: -62px;
+        }
+    }
+
+    
+    @media (max-width: 1300px) {
+        padding-right: 50px;
+        gap: 100px;
+        line-height: 1;
+        align-items: center;
+    }
+    @media (max-width: 850px) {
+
+        &:not(:last-child){
+            &::after{
+                right: 0;
+                left: 0;
+            }
+        }
+
+        &:last-child{
+            &::after{
+                @include line;
+                right: 0px;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        font-size: 19px;
+        line-height: 1.25;
+    }
+    @media (max-width: 450px) {
+        font-size: 16px;
+        line-height: 1.25;
+        gap: 65px;
+        padding-right: 15px;
+    }
+
+
+
+}
+.prices__tab-item-name {
+    flex: 0 0 auto;
+
+    @media (max-width: 1300px) {
+        flex-shrink: 1;
+        padding: 15px 0;
+    }
+    @media (max-width: 350px) {
+        flex: 0 0 100px;
+    }
+}
+.prices__tab-item-price {
+    flex:  0 0 340px;
+
+    @media (max-width: 1300px) {
+        
+        flex:  0 0 200px;
+    }
+
+    @media (max-width: 740px) {
+        flex: 0 0 120px;
+    }
+    @media (max-width: 350px) {
+        flex: 0 0 100px;
+    }
+}

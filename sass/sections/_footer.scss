@@ -1,0 +1,31 @@
+.footer {
+	margin-top: auto; /* sticky footer */
+
+	padding: 42px 0;
+
+
+	background-color: $green-color;
+	color: #FFFFFF;
+
+	@media (max-width: 660px) {
+		text-align: center;
+	}
+	@media (max-width: 430px) {
+		padding: 21px 0;
+	}
+	
+
+}
+
+.footer__text{
+	font-size: 24px;
+	line-height: 1.29;
+
+
+	@media (max-width: 430px) {
+		font-size: 16px;
+		line-height: 1.3125;
+		text-align: center;	
+	}
+
+}

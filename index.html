@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>Стартовый шаблон</title>
+		<!-- <meta name="description" content="Описание страницы" />
+		<meta name="keywords" content="ключевые слова, фразы" /> -->
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./fonts/FuturaPT/stylesheet.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- Open Graph -->
+		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+		<!-- <meta property="og:type" content="website" />
+		<meta property="og:title" content="Туристическое агентство Форест Тревел" />
+		<meta property="og:description" content="Турпоходы по дикой природе" />
+		<meta property="og:image" content="./img/opengraph.jpg"/> -->
+
+		<!-- Favicons -->
+		<!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#1a60cf">
+		<link rel="shortcut icon" href="./img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff"> -->
+	</head>
+	<body>
+
+		<div class="page-top ">
+			<div class="page-top__container">
+				<div class="page-top__delay">
+
+					<div class="page-top__wrapper">
+	
+						<div class="page-top__logo">
+							<img src="./img/logo/logo-mobile.svg" alt="logo">
+						</div>
+						<nav class="page-top__nav nav-mobile">
+							<ul class="nav-mobile__list">
+								<li><a href="#price">Прайс</a></li>
+								<li><a href="#!">Отзывы</a></li>
+								<li><a href="#contacts">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="page-top__social social">
+							<a href="#!" class="social-link">
+								<svg width="65" height="38" viewBox="0 0 65 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g class="social-link-vk">
+										<path d="M64.6366 33.521C64.5327 33.3697 64.4808 33.2185 64.4289 33.1176C63.2867 31.1513 61.1581 28.7311 57.9912 25.8571L57.9393 25.8067L57.8874 25.7563L57.8355 25.7059H57.7835C56.3299 24.3445 55.4473 23.4874 55.0319 23.0336C54.357 22.1765 54.1494 21.2689 54.5647 20.3613C54.8243 19.7059 55.8626 18.2437 57.6278 16.0756C58.5623 14.916 59.2891 14.0084 59.8083 13.3025C63.7021 8.26051 65.4153 5.03362 64.8962 3.62185L64.6885 3.31933C64.5327 3.11765 64.2212 2.91597 63.6502 2.76471C63.0791 2.61345 62.3522 2.56303 61.4697 2.66387L51.7612 2.71429C51.6054 2.66387 51.3978 2.66387 51.0863 2.71429C50.7748 2.76471 50.619 2.81513 50.619 2.81513L50.4633 2.91597L50.3075 3.01681C50.2037 3.06723 50.0479 3.21849 49.9441 3.36975C49.7883 3.52101 49.6845 3.72269 49.6326 3.92437C48.5942 6.59664 47.3482 9.01681 45.9984 11.3361C45.1677 12.6975 44.389 13.8571 43.7141 14.8655C43.0391 15.874 42.4161 16.5798 41.9489 17.084C41.4816 17.5378 41.0663 17.9412 40.651 18.1933C40.2875 18.4958 39.976 18.5966 39.7684 18.5462C39.5607 18.4958 39.353 18.4454 39.1973 18.395C38.8858 18.1933 38.6262 17.9412 38.4185 17.5882C38.2109 17.2353 38.107 16.8319 38.0032 16.3277C37.9513 15.8235 37.8994 15.3697 37.8994 15.0168C37.8994 14.6639 37.8994 14.1092 37.8994 13.4538C37.8994 12.7983 37.9513 12.2941 37.9513 12.0924C37.9513 11.2353 37.9513 10.3782 38.0032 9.36975C38.0551 8.41177 38.0551 7.60504 38.107 7.05042C38.107 6.4958 38.1589 5.89076 38.1589 5.2353C38.1589 4.57983 38.107 4.12605 38.0551 3.72269C38.0032 3.36975 37.8474 3.01681 37.6917 2.66387C37.5359 2.31093 37.2764 2.05883 37.0168 1.85715C36.7053 1.65546 36.3419 1.5042 35.8746 1.40336C34.6805 1.15126 33.1749 1 31.3059 1C27.0487 0.949582 24.401 1.20168 23.155 1.80672C22.6877 2.05883 22.2724 2.36135 21.857 2.81513C21.4417 3.31933 21.3898 3.57143 21.7013 3.62185C23.0511 3.82353 24.0375 4.27731 24.5567 5.03362L24.7644 5.43698C24.9201 5.7395 25.0759 6.2437 25.2316 6.94958C25.3874 7.65546 25.4912 8.46219 25.5431 9.36975C25.647 10.9832 25.647 12.3445 25.5431 13.4538C25.4393 14.6134 25.3355 15.4706 25.2316 16.1261C25.1278 16.7815 24.972 17.2857 24.7644 17.6891C24.5567 18.0924 24.401 18.3445 24.349 18.395C24.2971 18.4958 24.2452 18.5462 24.1933 18.5462C23.8818 18.6471 23.5703 18.6975 23.2588 18.6975C22.9473 18.6975 22.5839 18.5462 22.1166 18.2437C21.6494 17.9412 21.1821 17.5378 20.7149 16.9832C20.2476 16.4286 19.6765 15.7227 19.0535 14.7143C18.4305 13.7563 17.8075 12.5966 17.1845 11.2857L16.6653 10.3277C16.3019 9.72269 15.8866 8.81513 15.2636 7.65546C14.6925 6.4958 14.1733 5.33614 13.7061 4.27731C13.5503 3.82353 13.2388 3.47059 12.8754 3.21849L12.7196 3.11765C12.6158 3.01681 12.4081 2.91597 12.2005 2.81513C11.9409 2.71429 11.6813 2.66387 11.4217 2.61345L2.18051 2.66387C1.24601 2.66387 0.571086 2.86555 0.259585 3.26891L0.103834 3.47059C0.0519169 3.57143 0 3.77311 0 3.97479C0 4.22689 0.0519169 4.52941 0.207668 4.88235C1.55751 7.95798 3.01118 10.9328 4.62061 13.8067C6.23003 16.6807 7.57987 19 8.77396 20.7647C9.96805 22.5294 11.1621 24.1933 12.3562 25.7059C13.5503 27.2689 14.381 28.2773 14.7963 28.6807C15.2117 29.1345 15.5232 29.437 15.7308 29.6891L16.5615 30.4958C17.0807 31 17.9113 31.6555 18.9497 32.3613C19.988 33.1176 21.1821 33.8235 22.4281 34.5294C23.726 35.2353 25.1797 35.8403 26.893 36.2941C28.6062 36.7479 30.2157 36.9496 31.8251 36.8487H35.7189C36.4976 36.7983 37.1206 36.5462 37.5359 36.1429L37.6917 35.9916C37.7955 35.8403 37.8474 35.6387 37.9513 35.3866C38.0551 35.1345 38.0551 34.8319 38.0551 34.479C38.0551 33.521 38.107 32.6639 38.2628 31.9076C38.4185 31.1513 38.6262 30.5966 38.8339 30.1933C39.0415 29.7899 39.3011 29.4874 39.5607 29.2353C39.8203 28.9832 40.028 28.8319 40.1318 28.7815C40.2356 28.7311 40.3395 28.6807 40.3914 28.6807C40.9105 28.5294 41.5855 28.6807 42.3123 29.1849C43.0391 29.6891 43.7141 30.3445 44.389 31.1008C45.012 31.8571 45.7907 32.7143 46.7252 33.6723C47.6078 34.6303 48.4385 35.3361 49.1134 35.7899L49.7883 36.1933C50.2556 36.4454 50.8267 36.6975 51.5535 36.8992C52.2804 37.1008 52.9034 37.1513 53.4225 37.0504L62.0927 36.8992C62.9233 36.8992 63.5982 36.7479 64.0655 36.4958C64.5327 36.2437 64.8442 35.9412 64.8962 35.5882C65 35.2353 65 34.8824 64.8962 34.479C64.7923 33.9748 64.7404 33.6723 64.6366 33.521Z" fill="white"/>
+	
+									</g>
+								</svg>
+							</a>
+							<a href="#!" class="social-link">
+								<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g class="social-link-insta">
+										<path d="M36.4886 51H14.5114C6.52852 51 0 44.5038 0 36.4886V14.5114C0 6.52852 6.52852 0 14.5114 0H36.4886C44.5038 0 51 6.52852 51 14.5114V36.4886C51 44.5038 44.5038 51 36.4886 51ZM14.5114 4.36312C8.92015 4.36312 4.36312 8.92015 4.36312 14.5114V36.4886C4.36312 42.0798 8.92015 46.6369 14.5114 46.6369H36.4886C42.0798 46.6369 46.6369 42.0798 46.6369 36.4886V14.5114C46.6369 8.92015 42.0798 4.36312 36.4886 4.36312H14.5114Z" fill="white"/>
+										<path d="M25.4999 38.557C18.2927 38.557 12.4429 32.7072 12.4429 25.5C12.4429 18.2928 18.2927 12.443 25.4999 12.443C32.7071 12.443 38.5569 18.2928 38.5569 25.5C38.5569 32.7072 32.7071 38.557 25.4999 38.557ZM25.4999 16.8061C20.7166 16.8061 16.806 20.7167 16.806 25.5C16.806 30.2833 20.7166 34.1939 25.4999 34.1939C30.2832 34.1939 34.1938 30.2833 34.1938 25.5C34.1938 20.7167 30.2832 16.8061 25.4999 16.8061Z" fill="white"/>
+										<path d="M42.2739 11.6996C42.2739 13.4449 40.8841 14.8346 39.1389 14.8346C37.3936 14.8346 36.0039 13.4449 36.0039 11.6996C36.0039 9.95438 37.3936 8.56464 39.1389 8.56464C40.8518 8.56464 42.2739 9.95438 42.2739 11.6996Z" fill="white"/>
+									</g>
+									</svg>					
+							</a>
+						</div>
+						
+					</div>
+
+				</div>
+				<div class="page-top__burger">
+					<div class="nav-icon">
+						<div class="nav-icon__middle"></div>
+					</div>					
+				</div>
+			</div>
+		</div>
+
+		<header class="header ">
+
+			<div class="header__top">
+				<div class="header__nav">
+					<nav class="nav">
+						<ul class="nav-menu-list">
+							<li><a href="#price" data-title = "Прайс">Прайс</a></li>
+							<li><a href="#!" data-title = "Отзывы">Отзывы</a></li>
+							<li><a href="#contacts" data-title = "Контакты">Контакты</a></li>
+						</ul>
+					</nav>
+
+					<div class="header__social social">
+						<a href="#!" class="social-link">
+							<svg width="65" height="38" viewBox="0 0 65 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g class="social-link-vk">
+									<path d="M64.6366 33.521C64.5327 33.3697 64.4808 33.2185 64.4289 33.1176C63.2867 31.1513 61.1581 28.7311 57.9912 25.8571L57.9393 25.8067L57.8874 25.7563L57.8355 25.7059H57.7835C56.3299 24.3445 55.4473 23.4874 55.0319 23.0336C54.357 22.1765 54.1494 21.2689 54.5647 20.3613C54.8243 19.7059 55.8626 18.2437 57.6278 16.0756C58.5623 14.916 59.2891 14.0084 59.8083 13.3025C63.7021 8.26051 65.4153 5.03362 64.8962 3.62185L64.6885 3.31933C64.5327 3.11765 64.2212 2.91597 63.6502 2.76471C63.0791 2.61345 62.3522 2.56303 61.4697 2.66387L51.7612 2.71429C51.6054 2.66387 51.3978 2.66387 51.0863 2.71429C50.7748 2.76471 50.619 2.81513 50.619 2.81513L50.4633 2.91597L50.3075 3.01681C50.2037 3.06723 50.0479 3.21849 49.9441 3.36975C49.7883 3.52101 49.6845 3.72269 49.6326 3.92437C48.5942 6.59664 47.3482 9.01681 45.9984 11.3361C45.1677 12.6975 44.389 13.8571 43.7141 14.8655C43.0391 15.874 42.4161 16.5798 41.9489 17.084C41.4816 17.5378 41.0663 17.9412 40.651 18.1933C40.2875 18.4958 39.976 18.5966 39.7684 18.5462C39.5607 18.4958 39.353 18.4454 39.1973 18.395C38.8858 18.1933 38.6262 17.9412 38.4185 17.5882C38.2109 17.2353 38.107 16.8319 38.0032 16.3277C37.9513 15.8235 37.8994 15.3697 37.8994 15.0168C37.8994 14.6639 37.8994 14.1092 37.8994 13.4538C37.8994 12.7983 37.9513 12.2941 37.9513 12.0924C37.9513 11.2353 37.9513 10.3782 38.0032 9.36975C38.0551 8.41177 38.0551 7.60504 38.107 7.05042C38.107 6.4958 38.1589 5.89076 38.1589 5.2353C38.1589 4.57983 38.107 4.12605 38.0551 3.72269C38.0032 3.36975 37.8474 3.01681 37.6917 2.66387C37.5359 2.31093 37.2764 2.05883 37.0168 1.85715C36.7053 1.65546 36.3419 1.5042 35.8746 1.40336C34.6805 1.15126 33.1749 1 31.3059 1C27.0487 0.949582 24.401 1.20168 23.155 1.80672C22.6877 2.05883 22.2724 2.36135 21.857 2.81513C21.4417 3.31933 21.3898 3.57143 21.7013 3.62185C23.0511 3.82353 24.0375 4.27731 24.5567 5.03362L24.7644 5.43698C24.9201 5.7395 25.0759 6.2437 25.2316 6.94958C25.3874 7.65546 25.4912 8.46219 25.5431 9.36975C25.647 10.9832 25.647 12.3445 25.5431 13.4538C25.4393 14.6134 25.3355 15.4706 25.2316 16.1261C25.1278 16.7815 24.972 17.2857 24.7644 17.6891C24.5567 18.0924 24.401 18.3445 24.349 18.395C24.2971 18.4958 24.2452 18.5462 24.1933 18.5462C23.8818 18.6471 23.5703 18.6975 23.2588 18.6975C22.9473 18.6975 22.5839 18.5462 22.1166 18.2437C21.6494 17.9412 21.1821 17.5378 20.7149 16.9832C20.2476 16.4286 19.6765 15.7227 19.0535 14.7143C18.4305 13.7563 17.8075 12.5966 17.1845 11.2857L16.6653 10.3277C16.3019 9.72269 15.8866 8.81513 15.2636 7.65546C14.6925 6.4958 14.1733 5.33614 13.7061 4.27731C13.5503 3.82353 13.2388 3.47059 12.8754 3.21849L12.7196 3.11765C12.6158 3.01681 12.4081 2.91597 12.2005 2.81513C11.9409 2.71429 11.6813 2.66387 11.4217 2.61345L2.18051 2.66387C1.24601 2.66387 0.571086 2.86555 0.259585 3.26891L0.103834 3.47059C0.0519169 3.57143 0 3.77311 0 3.97479C0 4.22689 0.0519169 4.52941 0.207668 4.88235C1.55751 7.95798 3.01118 10.9328 4.62061 13.8067C6.23003 16.6807 7.57987 19 8.77396 20.7647C9.96805 22.5294 11.1621 24.1933 12.3562 25.7059C13.5503 27.2689 14.381 28.2773 14.7963 28.6807C15.2117 29.1345 15.5232 29.437 15.7308 29.6891L16.5615 30.4958C17.0807 31 17.9113 31.6555 18.9497 32.3613C19.988 33.1176 21.1821 33.8235 22.4281 34.5294C23.726 35.2353 25.1797 35.8403 26.893 36.2941C28.6062 36.7479 30.2157 36.9496 31.8251 36.8487H35.7189C36.4976 36.7983 37.1206 36.5462 37.5359 36.1429L37.6917 35.9916C37.7955 35.8403 37.8474 35.6387 37.9513 35.3866C38.0551 35.1345 38.0551 34.8319 38.0551 34.479C38.0551 33.521 38.107 32.6639 38.2628 31.9076C38.4185 31.1513 38.6262 30.5966 38.8339 30.1933C39.0415 29.7899 39.3011 29.4874 39.5607 29.2353C39.8203 28.9832 40.028 28.8319 40.1318 28.7815C40.2356 28.7311 40.3395 28.6807 40.3914 28.6807C40.9105 28.5294 41.5855 28.6807 42.3123 29.1849C43.0391 29.6891 43.7141 30.3445 44.389 31.1008C45.012 31.8571 45.7907 32.7143 46.7252 33.6723C47.6078 34.6303 48.4385 35.3361 49.1134 35.7899L49.7883 36.1933C50.2556 36.4454 50.8267 36.6975 51.5535 36.8992C52.2804 37.1008 52.9034 37.1513 53.4225 37.0504L62.0927 36.8992C62.9233 36.8992 63.5982 36.7479 64.0655 36.4958C64.5327 36.2437 64.8442 35.9412 64.8962 35.5882C65 35.2353 65 34.8824 64.8962 34.479C64.7923 33.9748 64.7404 33.6723 64.6366 33.521Z" fill="white"/>
+
+								</g>
+								</svg>
+						</a>
+						<a href="#!" class="social-link">
+							<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g class="social-link-insta">
+									<path d="M36.4886 51H14.5114C6.52852 51 0 44.5038 0 36.4886V14.5114C0 6.52852 6.52852 0 14.5114 0H36.4886C44.5038 0 51 6.52852 51 14.5114V36.4886C51 44.5038 44.5038 51 36.4886 51ZM14.5114 4.36312C8.92015 4.36312 4.36312 8.92015 4.36312 14.5114V36.4886C4.36312 42.0798 8.92015 46.6369 14.5114 46.6369H36.4886C42.0798 46.6369 46.6369 42.0798 46.6369 36.4886V14.5114C46.6369 8.92015 42.0798 4.36312 36.4886 4.36312H14.5114Z" fill="white"/>
+									<path d="M25.4999 38.557C18.2927 38.557 12.4429 32.7072 12.4429 25.5C12.4429 18.2928 18.2927 12.443 25.4999 12.443C32.7071 12.443 38.5569 18.2928 38.5569 25.5C38.5569 32.7072 32.7071 38.557 25.4999 38.557ZM25.4999 16.8061C20.7166 16.8061 16.806 20.7167 16.806 25.5C16.806 30.2833 20.7166 34.1939 25.4999 34.1939C30.2832 34.1939 34.1938 30.2833 34.1938 25.5C34.1938 20.7167 30.2832 16.8061 25.4999 16.8061Z" fill="white"/>
+									<path d="M42.2739 11.6996C42.2739 13.4449 40.8841 14.8346 39.1389 14.8346C37.3936 14.8346 36.0039 13.4449 36.0039 11.6996C36.0039 9.95438 37.3936 8.56464 39.1389 8.56464C40.8518 8.56464 42.2739 9.95438 42.2739 11.6996Z" fill="white"/>
+								</g>
+								</svg>					
+						</a>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="header__body">
+				<div class="container">
+					<div class="header__content">
+						<div class="header__logo logo">
+							<img src="./img/logo/logo.svg" alt="logo">
+						</div>
+
+						<div class="header__hours">
+							<p>9:00-22:00</p>
+							<span>Ежедневно</span>
+						</div>
+
+		
+						<div class="header__buttons">
+							<button data-modal-button class="btn">Записаться</button>
+							<button  data-modal-video class="btn btn_big">оформить бонусную карту</button>
+						</div>
+						
+						<a href="#working-time" class="header__arrow">
+							<img src="./img/header/arrow.svg" alt="arrow">
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="working-time " id="working-time">
+				<div class="container">
+					<div class="working-time__content">
+						<div class="working-time__hours">
+							<span>Время работы</span>
+							<p>9:00-22:00</p>
+							<span>Ежедневно</span>
+						</div>
+						<div class="working-time__special-offer">
+							<span>Специальное предложение!</span>
+							<p>дарим 500 ₽</p>
+							<span>на первое посещение</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="prices " id="price">
+				<div class="container">
+					<div class="prices__tab-nav">
+						<div class="prices__tab-title" data-nav="1">маникюр</div>
+						<div class="prices__tab-title" data-nav="2">педикюр</div>
+						<div class="prices__tab-title prices__tab-title_active" data-nav="3">ресницы</div>
+						<div class="prices__tab-title" data-nav="4">брови</div>
+					</div>
+
+
+					<div class="prices__tab-title" data-nav="1">маникюр <span></span></div>
+
+					<div class="prices__tab-body " data-content="1">
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Маникюр без покрытия</div>
+							<div class="prices__tab-item-price">1100 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Маникюр с покрытием гель-лак (снятие наращивания входит в стоимость)</div>
+							<div class="prices__tab-item-price">1900 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Маникюр с покрытием лак </div>
+							<div class="prices__tab-item-price">1400 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Ремонт 1 ногтя</div>
+							<div class="prices__tab-item-price">100 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Наращивание 1 ногтя</div>
+							<div class="prices__tab-item-price">200 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Укрепление ногтей пудрой</div>
+							<div class="prices__tab-item-price">300 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Лечебное покрытие IBX</div>
+							<div class="prices__tab-item-price">300 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Парафинотерапия рук</div>
+							<div class="prices__tab-item-price">600 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Мужской маникюр</div>
+							<div class="prices__tab-item-price">1100 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Французское | лунное покрытие</div>
+							<div class="prices__tab-item-price">500 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Втирка | стразы | простой дизайн</div>
+							<div class="prices__tab-item-price">от 100 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Дизайн 1 ногтя сложный</div>
+							<div class="prices__tab-item-price">250 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">СЕТ ПРЕМИУМ В 4 РУКИ доплата</div>
+							<div class="prices__tab-item-price">400 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">СЕТ ПРЕМИУМ В 6 РУК доплата</div>
+							<div class="prices__tab-item-price">600 ₽</div>
+						</div>
+					</div>
+
+					<div class="prices__tab-title" data-nav="2">педикюр <span></span></div>
+
+					<div class="prices__tab-body" data-content="2">
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Педикюр гигиенический SMART (обработка пальцев + полная обработка стопы)</div>
+							<div class="prices__tab-item-price">1900 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Экспресс педикюр (обработка пальцев ног)</div>
+							<div class="prices__tab-item-price">1600 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Педикюр SMART с покрытием гель-лак (снятие входит в стоимость)</div>
+							<div class="prices__tab-item-price">2400 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Экспресс педикюр с покрытием гель-лак</div>
+							<div class="prices__tab-item-price">2100 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Покрытие лак</div>
+							<div class="prices__tab-item-price">300 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Французское | лунное покрытие</div>
+							<div class="prices__tab-item-price">500 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Втирка | стразы | простой дизайн</div>
+							<div class="prices__tab-item-price">от 100 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Дизайн 1 ногтя сложный</div>
+							<div class="prices__tab-item-price">250 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">СЕТ ПРЕМИУМ В 4 РУКИ доплата</div>
+							<div class="prices__tab-item-price">400 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">СЕТ ПРЕМИУМ В 6 РУК доплата</div>
+							<div class="prices__tab-item-price">600 ₽</div>
+						</div>
+					</div>
+
+					<div class="prices__tab-title prices__tab-title_active" data-nav="3">ресницы <span></span></div>
+					<div class="prices__tab-body prices__tab-body_active" data-content="3">
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Наращивание ресниц классическое</div>
+							<div class="prices__tab-item-price">2100 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Наращивание ресниц 1.5D</div>
+							<div class="prices__tab-item-price">2400 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Наращивание ресниц 2D</div>
+							<div class="prices__tab-item-price">2600 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Наращивание ресниц 3D</div>
+							<div class="prices__tab-item-price">2900 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Снятие нашей работы с последующим наращиванием</div>
+							<div class="prices__tab-item-price">бесплатно</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Снятие чужой работы с последующим наращиванием</div>
+							<div class="prices__tab-item-price">300 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Снятие ресниц</div>
+							<div class="prices__tab-item-price">500 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Коррекция ресниц</div>
+							<div class="prices__tab-item-price">500 ₽  от стоимости наращивания</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Окрашивание ресниц</div>
+							<div class="prices__tab-item-price">500 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Ламинирование ресниц</div>
+							<div class="prices__tab-item-price">500 ₽</div>
+						</div>
+					</div>
+
+					<div class="prices__tab-title" data-nav="4">брови <span></span></div>
+					<div class="prices__tab-body" data-content="4">
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Коррекция + окрашивание краской | хной</div>
+							<div class="prices__tab-item-price">1100 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Коррекция</div>
+							<div class="prices__tab-item-price">700 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Окрашивание краской | хной</div>
+							<div class="prices__tab-item-price">600 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Ламинирование</div>
+							<div class="prices__tab-item-price">1400 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Ламинирование + коррекция + окрашивание</div>
+							<div class="prices__tab-item-price">1900 ₽</div>
+						</div>
+						<div class="prices__tab-item">
+							<div class="prices__tab-item-name">Ботокс (счастье для бровей)</div>
+							<div class="prices__tab-item-price">400 ₽</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section class="portfolio ">
+				<div class="container">
+					<h2 class="portfolio__title title-2">Наши работы</h2>
+				</div>
+				<div class="portfolio__items slider">
+					<div class="portfolio__item portfolio__item_1 slider__item slider__item_active ">
+						<img src="./img/potrfolio/01.jpg" alt="img">
+					</div>
+					<div class="portfolio__item portfolio__item_2 slider__item ">
+						<img src="./img/potrfolio/02.jpg" alt="img">
+					</div>
+					<div class="portfolio__item portfolio__item_3 slider__item ">
+						<img src="./img/potrfolio/03.jpg" alt="img">
+					</div>
+					<div class="portfolio__item portfolio__item_4 slider__item ">
+						<img src="./img/potrfolio/04.jpg" alt="img">
+					</div>
+					<div class="portfolio__item portfolio__item_5 slider__item ">
+						<img src="./img/potrfolio/05.jpg" alt="img">
+					</div>
+					<div class="portfolio__item portfolio__item_6 slider__item ">
+						<img src="./img/potrfolio/06.jpg" alt="img">
+					</div>
+				</div>
+
+				<div class="slider__pagination" id="dots">
+					<!-- <span class="slider-dot slider-dot_active"></span>
+					<span class="slider-dot"></span>
+					<span class="slider-dot"></span> -->
+				</div>
+
+				<!-- <div class="portfolio__decor-border">
+					<div class="decor-border decor-border_big">
+						<div class="decor-border__substruct"></div>
+					</div>
+				</div> -->
+			</section>
+
+		
+			<section class="rules ">
+				<div class="container">
+					<div class="rules__content">
+						<h2 class="rules__title title-2">Правила посещения студии</h2>
+
+						<div class="rules__items">
+
+							<div class="rules__item">
+								<div class="rules__item-name">Опоздание</div>
+								<p class="rules__item-text">
+									Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. 
+								</p>
+							</div>
+
+							<div class="rules__item">
+								<div class="rules__item-name">Отказ в предоставлении услуг</div>
+								<p class="rules__item-text">
+									Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. 
+								</p>
+							</div>
+
+							<div class="rules__item">
+								<div class="rules__item-name ">Дизайны</div>
+								<p class="rules__item-text">
+									Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. 
+								</p>
+							</div>
+
+							<div class="rules__item">
+								<div class="rules__item-name">Сертификат</div>
+								<p class="rules__item-text">
+									Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. Текст правила. 
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="contacts " id="contacts">
+				<div class="container">
+					<div class="contacts__content">
+						<div class="contacts__desctiption">
+							<h2 class="contacts__title title-2">контакты</h2>
+							<div class="contacts__address">Среднерогатская, 13, к.1, стр.1</div>
+							<div class="contacts__phone">+7 (911) 945-57-57</div>
+							<div class="contacts__social social">
+								<a href="#!" class="social-link">
+									<svg width="65" height="37" viewBox="0 0 65 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g class="social-link-vk">
+											<path d="M64.6366 32.5273C64.5327 32.376 64.4808 32.2248 64.4289 32.1239C63.2867 30.1575 61.1581 27.7374 57.9912 24.8634L57.9393 24.813L57.8874 24.7626L57.8355 24.7122H57.7835C56.3299 23.3508 55.4473 22.4937 55.0319 22.0399C54.357 21.1827 54.1494 20.2752 54.5647 19.3676C54.8243 18.7122 55.8626 17.25 57.6278 15.0819C58.5623 13.9222 59.2891 13.0147 59.8083 12.3088C63.7021 7.26678 65.4153 4.03989 64.8962 2.62812L64.6885 2.3256C64.5327 2.12392 64.2212 1.92224 63.6502 1.77098C63.0791 1.61972 62.3522 1.5693 61.4697 1.67014L51.7612 1.72056C51.6054 1.67014 51.3978 1.67014 51.0863 1.72056C50.7748 1.77098 50.619 1.8214 50.619 1.8214L50.4633 1.92224L50.3075 2.02308C50.2037 2.0735 50.0479 2.22476 49.9441 2.37602C49.7883 2.52728 49.6845 2.72896 49.6326 2.93064C48.5942 5.60291 47.3482 8.02308 45.9984 10.3424C45.1677 11.7038 44.389 12.8634 43.7141 13.8718C43.0391 14.8802 42.4161 15.5861 41.9489 16.0903C41.4816 16.5441 41.0663 16.9474 40.651 17.1995C40.2875 17.5021 39.976 17.6029 39.7684 17.5525C39.5607 17.5021 39.353 17.4517 39.1973 17.4012C38.8858 17.1996 38.6262 16.9475 38.4185 16.5945C38.2109 16.2416 38.107 15.8382 38.0032 15.334C37.9513 14.8298 37.8994 14.376 37.8994 14.0231C37.8994 13.6701 37.8994 13.1155 37.8994 12.4601C37.8994 11.8046 37.9513 11.3004 37.9513 11.0987C37.9513 10.2416 37.9513 9.38443 38.0032 8.37602C38.0551 7.41804 38.0551 6.61132 38.107 6.05669C38.107 5.50207 38.1589 4.89703 38.1589 4.24157C38.1589 3.58611 38.107 3.13232 38.0551 2.72896C38.0032 2.37602 37.8474 2.02308 37.6917 1.67014C37.5359 1.3172 37.2764 1.0651 37.0168 0.863416C36.7053 0.661736 36.3419 0.510475 35.8746 0.409635C34.6805 0.157534 33.1749 0.00627364 31.3059 0.00627364C27.0487 -0.0441465 24.401 0.207954 23.155 0.812996C22.6877 1.0651 22.2724 1.36762 21.857 1.8214C21.4417 2.3256 21.3898 2.5777 21.7013 2.62812C23.0511 2.8298 24.0375 3.28358 24.5567 4.03989L24.7644 4.44325C24.9201 4.74577 25.0759 5.24997 25.2316 5.95585C25.3874 6.66174 25.4912 7.46846 25.5431 8.37602C25.647 9.98947 25.647 11.3508 25.5431 12.4601C25.4393 13.6197 25.3355 14.4769 25.2316 15.1323C25.1278 15.7878 24.972 16.292 24.7644 16.6953C24.5567 17.0987 24.401 17.3508 24.349 17.4012C24.2971 17.5021 24.2452 17.5525 24.1933 17.5525C23.8818 17.6533 23.5703 17.7038 23.2588 17.7038C22.9473 17.7038 22.5839 17.5525 22.1166 17.25C21.6494 16.9475 21.1821 16.5441 20.7149 15.9895C20.2476 15.4348 19.6765 14.729 19.0535 13.7206C18.4305 12.7626 17.8075 11.6029 17.1845 10.292L16.6653 9.334C16.3019 8.72896 15.8866 7.8214 15.2636 6.66174C14.6925 5.50207 14.1733 4.34241 13.7061 3.28358C13.5503 2.8298 13.2388 2.47686 12.8754 2.22476L12.7196 2.12392C12.6158 2.02308 12.4081 1.92224 12.2005 1.8214C11.9409 1.72056 11.6813 1.67014 11.4217 1.61972L2.18051 1.67014C1.24601 1.67014 0.571086 1.87182 0.259585 2.27518L0.103834 2.47686C0.0519169 2.5777 0 2.77938 0 2.98106C0 3.23316 0.0519169 3.53569 0.207668 3.88863C1.55751 6.96426 3.01118 9.93905 4.62061 12.813C6.23003 15.6869 7.57987 18.0063 8.77396 19.771C9.96805 21.5357 11.1621 23.1996 12.3562 24.7122C13.5503 26.2752 14.381 27.2836 14.7963 27.6869C15.2117 28.1407 15.5232 28.4432 15.7308 28.6953L16.5615 29.5021C17.0807 30.0063 17.9113 30.6617 18.9497 31.3676C19.988 32.1239 21.1821 32.8298 22.4281 33.5357C23.726 34.2416 25.1797 34.8466 26.893 35.3004C28.6062 35.7542 30.2157 35.9559 31.8251 35.855H35.7189C36.4976 35.8046 37.1206 35.5525 37.5359 35.1491L37.6917 34.9979C37.7955 34.8466 37.8474 34.6449 37.9513 34.3928C38.0551 34.1407 38.0551 33.8382 38.0551 33.4853C38.0551 32.5273 38.107 31.6701 38.2628 30.9138C38.4185 30.1575 38.6262 29.6029 38.8339 29.1996C39.0415 28.7962 39.3011 28.4937 39.5607 28.2416C39.8203 27.9895 40.028 27.8382 40.1318 27.7878C40.2356 27.7374 40.3395 27.6869 40.3914 27.6869C40.9105 27.5357 41.5855 27.6869 42.3123 28.1911C43.0391 28.6953 43.7141 29.3508 44.389 30.1071C45.012 30.8634 45.7907 31.7206 46.7252 32.6785C47.6078 33.6365 48.4385 34.3424 49.1134 34.7962L49.7883 35.1996C50.2556 35.4517 50.8267 35.7038 51.5535 35.9054C52.2804 36.1071 52.9034 36.1575 53.4225 36.0567L62.0927 35.9054C62.9233 35.9054 63.5982 35.7542 64.0655 35.5021C64.5327 35.25 64.8442 34.9474 64.8962 34.5945C65 34.2416 65 33.8886 64.8962 33.4853C64.7923 32.9811 64.7404 32.6785 64.6366 32.5273Z" fill="black"/>
+										</g>
+										</svg>
+								</a>
+								<a href="#!" class="social-link">
+									<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g class="social-link-insta">
+											<path d="M36.4886 51H14.5114C6.52852 51 0 44.5038 0 36.4886V14.5114C0 6.52852 6.52852 0 14.5114 0H36.4886C44.5038 0 51 6.52852 51 14.5114V36.4886C51 44.5038 44.5038 51 36.4886 51ZM14.5114 4.36312C8.92015 4.36312 4.36312 8.92015 4.36312 14.5114V36.4886C4.36312 42.0798 8.92015 46.6369 14.5114 46.6369H36.4886C42.0798 46.6369 46.6369 42.0798 46.6369 36.4886V14.5114C46.6369 8.92015 42.0798 4.36312 36.4886 4.36312H14.5114Z" fill="black"/>
+											<path d="M25.4999 38.5569C18.2927 38.5569 12.4429 32.7071 12.4429 25.4999C12.4429 18.2927 18.2927 12.4429 25.4999 12.4429C32.7071 12.4429 38.5569 18.2927 38.5569 25.4999C38.5569 32.7071 32.7071 38.5569 25.4999 38.5569ZM25.4999 16.806C20.7166 16.806 16.806 20.7166 16.806 25.4999C16.806 30.2832 20.7166 34.1938 25.4999 34.1938C30.2832 34.1938 34.1938 30.2832 34.1938 25.4999C34.1938 20.7166 30.2832 16.806 25.4999 16.806Z" fill="black"/>
+											<path d="M42.2739 11.6994C42.2739 13.4447 40.8841 14.8344 39.1389 14.8344C37.3936 14.8344 36.0039 13.4447 36.0039 11.6994C36.0039 9.95419 37.3936 8.56445 39.1389 8.56445C40.8518 8.56445 42.2739 9.95419 42.2739 11.6994Z" fill="black"/>
+										</g>
+										
+									</svg>										
+								</a>
+							</div>
+						</div>
+						<div class="contacts__map">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adebe07f100f9560a798ad77885f5ecd7033e3f98a3252cb0fd52e76d81f0dbb0&amp;source=constructor"  height="528" frameborder="0"></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer ">
+			<div class="container">
+				<div class="footer__text">&#169; The Artistry 2023</div>
+			</div>
+		</footer>
+
+		<div data-model class="modal-signup modal-signup_hidden">
+			<div class="modal-signup__body">
+				<div class="modal-signup__content">
+					<button data-btn-close class="modal-signup__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="2.82837" width="27.3715" height="4" transform="rotate(45 2.82837 0)" fill="#1A0000"/>
+							<rect x="0.141357" y="19.5566" width="27.3715" height="4" transform="rotate(-45 0.141357 19.5566)" fill="#1A0000"/>
+						</svg>						
+					</button>
+					<div class="modal-signup__title">Оставьте вашу заявку</div>
+					<form action="#!" class="modal-signup__form form">
+						<div class="form__items">
+							<div class="form__item">
+								<label for="name" class="form__title">Имя</label>
+								<input  id="name" type="text" class="form__input" placeholder="Введите имя">
+							</div>
+							<div class="form__item">
+								<label for="surname" class="form__title">Услуга</label>
+								<input  id="surname" type="text" class="form__input" placeholder="Введите услугу">
+							</div>
+							<div class="form__item">
+								<label for="phone" class="form__title">Телефон</label>
+								<input  id="phone" type="tel" class="form__input" placeholder="Введите телефон">
+							</div>
+						</div>
+	
+						<div class="form__btn">
+							<button type="submit" class=" btn">Записаться</button>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div data-model-video class="modal-video modal-video_hidden">
+			<div class="modal-video__body">
+				<div class="modal-video__contant">
+					<video controls  src="./video/shrek.mp4" class="modal-video__video"></video>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/main.js"></script>
+		<script src="./js/burgerMenu.js"></script>
+		<script src="./js/tabs.js"></script>
+		<script src="./js/slider.js"></script>
+		<script src="./js/accordion.js"></script>
+		<script src="./js/modals.js"></script>
+	</body>
+
+
+</html>

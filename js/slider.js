@@ -60,7 +60,7 @@ function showSliders(){
         }
         currentSlide (indexOfSlide);        
         indexOfSlide++;
-    },5000)
+    },2000)
 }
 
 

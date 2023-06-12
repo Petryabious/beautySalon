@@ -635,6 +635,34 @@ body > * {
   }
 }
 
+.btn-back {
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(126.1deg, #E3B373 6.83%, #FEE0B7 39.65%, #FEE5C5 61.73%, #DEA760 84.52%, #C3843E 106.27%);
+  font-size: 50px;
+}
+@media (max-width: 899px) {
+  .btn-back {
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+  }
+}
+
 .header {
   padding: 76px 0 64px;
   color: #ffffff;

@@ -1,6 +1,8 @@
 // slider
 const sliders = document.querySelectorAll('.slider__item');
 const dotsContainer = document.getElementById('dots');
+const [btnRight, btnLeft] = document.querySelectorAll('.slider__btns [type="button"]');
+
 let indexOfSlide = 0;
 
 // pagination
@@ -52,6 +54,25 @@ function currentSlide (index){
     activeDot(index);
 }
 
+btnRight.addEventListener('click', function(){
+    if (indexOfSlide === sliders.length-1) {
+        indexOfSlide=0;
+        currentSlide(indexOfSlide)
+    } else {
+        indexOfSlide++;
+        currentSlide(indexOfSlide)
+    }
+});
+btnLeft.addEventListener('click', function(){
+    if (indexOfSlide === 0) {
+        indexOfSlide=sliders.length-1;
+        currentSlide(indexOfSlide)
+    } else {
+        indexOfSlide--;
+        currentSlide(indexOfSlide)
+    }
+});
+
 
 function showSliders(){ 
     setInterval(()=>{
@@ -60,7 +81,7 @@ function showSliders(){
         }
         currentSlide (indexOfSlide);        
         indexOfSlide++;
-    },2000)
+    },4000)
 }
 
 
